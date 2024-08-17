@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- 
+    - primary meta tags
+  -->
+    <title>Shreya | Portfolio</title>
+    <meta name="title" content="Shreya | Portfolio" />
+    <meta
+      name="description"
+      content="Hey, I'm an Artist Shreya Kumari. Here yoy can see my skills and my customers's review I hope you will definitely like it!"
+    />
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./favicon.ico" type="image/svg+xml" />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/require.css" />
+    <link rel="stylesheet" href="./assets/css/pages/portfolio.css" />
+
+    <style>
+      .card-banner {
+        width: 30rem;
+      }
+      section li {
+        margin-top: 30px;
+      }
+      .img-holder img {
+        border-radius: 10px;
+      }
+      /* section {
+        padding: 0 100px;
+      } */
+      .chip {
+        margin-bottom: 50px;
+      }
+
+      @media (max-width: 768px) {
+        .author {
+          margin-top: 15px;
+        }
+        section {
+          padding: 0;
+        }
+        .portfolio-card,
+        .card-content {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+        }
+        .card-content {
+          padding: 0 20px;
+        }
+      }
+      .home {
+        font-size: 35px;
+      }
+
+      @media (max-width: 768px) {
+        .home {
+          font-size: 30px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- 
+    - #PRELOADER
+  -->
+
+    <div class="preloader" data-preloader>
+      <div class="preloader-circle"></div>
+    </div>
+
+    <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+      <a href="./index.html" class="logo">
+        <ion-icon name="home-outline" class="home"></ion-icon>
+      </a>
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a
+              href="./index.html"
+              class="label-lg navbar-link has-after active"
+              >Home</a
+            >
+          </li>
+
+          <li class="navbar-item">
+            <a href="./portfolio.html" class="label-lg navbar-link has-after"
+              >Portfolio</a
+            >
+          </li>
+
+          <li class="navbar-item">
+            <a href="./contact.html" class="label-lg navbar-link has-after"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <a href="./contact.html" class="btn btn-primary">Contact Now</a>
+
+      <button class="nav-toggle-btn" aria-label="menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+    </div>
+  </header>
+
+    <main>
+      <article>
+        <!-- 
+        - #PORTFOLIO
+      -->
+
+        <section class="section portfolio" aria-labelledby="portfolio-label">
+          <div class="container">
+            <h2
+              class="section-title headline-md text-center"
+              id="portfolio-label"
+            >
+              Latest Projects
+            </h2>
+
+            <div class="portfolio-card" style="display: flex; flex-wrap: wrap">
+              <div
+                class="card-banner img-holder"
+                style="border: none; box-shadow: none"
+              >
+                <img
+                  src="./assets/images/sherya2images/2.jpg"
+                  alt="img"
+                  class="img-cover"
+                  style="border: 2px solid var(--jet)"
+                />
+                <div
+                  class="card-content"
+                  style="
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 20px;
+                  "
+                >
+                  <span class="chip label-md">Portrait</span>
+                </div>
+              </div>
+
+              <div
+                class="card-banner img-holder"
+                style="border: none; box-shadow: none"
+              >
+                <img
+                  src="./assets/images/sherya2images/1.jpg"
+                  alt="img"
+                  class="img-cover"
+                  style="border: 2px solid var(--jet)"
+                />
+                <div
+                  class="card-content"
+                  style="
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 20px;
+                  "
+                >
+                  <span class="chip label-md">Portrait</span>
+                </div>
+              </div>
+
+              <div
+                class="card-banner img-holder"
+                style="border: none; box-shadow: none"
+              >
+                <img
+                  src="./assets/images/sherya2images/3.jpg"
+                  alt="img"
+                  class="img-cover"
+                  style="border: 2px solid var(--jet)"
+                />
+                <div
+                  class="card-content"
+                  style="
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 20px;
+                  "
+                >
+                  <span class="chip label-md">Portrait</span>
+                </div>
+              </div>
+
+              <div
+                class="card-banner img-holder"
+                style="border: none; box-shadow: none"
+              >
+                <img
+                  src="./assets/images/sherya2images/4.jpg"
+                  loading="lazy"
+                  alt="img"
+                  class="img-cover"
+                  style="border: 2px solid var(--jet)"
+                />
+                <div
+                  class="card-content"
+                  style="
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 20px;
+                  "
+                >
+                  <span class="chip label-md">Portrait</span>
+                </div>
+              </div>
+
+              <div
+                class="card-banner img-holder"
+                style="border: none; box-shadow: none"
+              >
+                <img
+                  src="./assets/images/sherya2images/5.jpg"
+                  loading="lazy"
+                  alt="img"
+                  class="img-cover"
+                  style="border: 2px solid var(--jet)"
+                />
+                <div
+                  class="card-content"
+                  style="
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 20px;
+                  "
+                >
+                  <span class="chip label-md">Bedsheet</span>
+                </div>
+              </div>
+
+              <div
+                class="card-banner img-holder"
+                style="border: none; box-shadow: none"
+              >
+                <img
+                  src="./assets/images/sherya2images/7.jpg"
+                  loading="lazy"
+                  alt="img"
+                  class="img-cover"
+                  style="border: 2px solid var(--jet)"
+                />
+                <div
+                  class="card-content"
+                  style="
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 20px;
+                  "
+                >
+                  <span class="chip label-md">Portrait</span>
+                </div>
+              </div>
+
+              <div
+                class="card-banner img-holder"
+                style="border: none; box-shadow: none"
+              >
+                <img
+                  src="./assets/images/sherya2images/6.jpg"
+                  loading="lazy"
+                  alt="img"
+                  class="img-cover"
+                  style="border: 2px solid var(--jet)"
+                />
+                <div
+                  class="card-content"
+                  style="
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 20px;
+                  "
+                >
+                  <span class="chip label-md">Portrait</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer">
+      <div class="container">
+        <ul class="social-list">
+          <li>
+            <a
+              href="https://www.facebook.com/shreya2creation?mibextid=qi2Omg&rdid=KVECvCgTCwnVbEnH&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2FXgC8fhxj93VsN94Y%2F%3Fmibextid%3Dqi2Omg"
+              class="social-link"
+            >
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://x.com/Shreyak86443604?t=1EJ-Z0I7KL0uwK_BeNNrQA&s=08"
+              class="social-link"
+            >
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://www.instagram.com/shreya2creation?"
+              class="social-link"
+            >
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+        </ul>
+
+        <p class="text-center">
+          &copy; 2024-25
+          <a href="./index.html" style="display: inline; margin: 0 10px"
+            >SHREYA 2 CREATION</a
+          >
+          All right reserved.
+        </p>
+        <p class="text-center author">
+          Designed By
+          <a
+            href="https://www.instagram.com/divyanshu._.sinha/"
+            style="
+              display: inline;
+              margin-left: 8px;
+              text-decoration: underline 1px solid;
+              font-weight: 500;
+            "
+            >DIVYANSHU</a
+          >
+        </p>
+      </div>
+    </footer>
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!-- 
+    - ionicon
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
+</html>

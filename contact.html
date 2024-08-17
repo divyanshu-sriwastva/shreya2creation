@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- 
+    - primary meta tags
+  -->
+    <title>Shreya | Contact</title>
+    <meta name="title" content="Shreya | Contact" />
+    <meta
+      name="description"
+      content="Hey, I'm an Artist Shreya Kumari. Here yoy can see my skills and my customers's review I hope you will definitely like it!"
+    />
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./favicon.ico" type="image/svg+xml" />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/require.css" />
+    <link rel="stylesheet" href="./assets/css/pages/contact.css" />
+
+    <style>
+      @media (max-width: 768px) {
+        .author {
+          margin-top: 15px;
+        }
+      }
+      .home {
+        font-size: 35px;
+      }
+
+      @media (max-width: 768px) {
+        .home {
+          font-size: 30px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- 
+    - #PRELOADER
+  -->
+
+    <div class="preloader" data-preloader>
+      <div class="preloader-circle"></div>
+    </div>
+
+    <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+      <a href="./index.html" class="logo">
+        <ion-icon name="home-outline" class="home"></ion-icon>
+      </a>
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a
+              href="./index.html"
+              class="label-lg navbar-link has-after active"
+              >Home</a
+            >
+          </li>
+
+          <li class="navbar-item">
+            <a href="./portfolio.html" class="label-lg navbar-link has-after"
+              >Portfolio</a
+            >
+          </li>
+
+          <li class="navbar-item">
+            <a href="./contact.html" class="label-lg navbar-link has-after"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <a href="./contact.html" class="btn btn-primary">Contact Now</a>
+
+      <button class="nav-toggle-btn" aria-label="menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+    </div>
+  </header>
+
+    <main>
+      <article>
+        <!-- 
+        - #CONTACT
+      -->
+
+        <section
+          class="section contact has-bg-image"
+          aria-labelledby="contact-label"
+          style="background-image: url('./assets/images/contact-bg.png')"
+        >
+          <div class="container">
+            <form
+              class="contact-form"
+              action="mailto:shreyakumari529@gmail.com"
+              method="GET"
+              enctype="text/plain"
+            >
+              <h2 class="headline-sm" id="contact-label">Get in touch</h2>
+
+              <p class="contact-text body-md">
+                Our friendly team would love to hear from you.
+              </p>
+
+              <label for="subject" class="label">Subject</label>
+              <input
+                type="text"
+                name="subject"
+                id="subject"
+                placeholder="Subject *"
+                class="input-field"
+              />
+
+              <label for="body" class="label">Your message </label>
+              <textarea
+                name="body"
+                id="message"
+                placeholder="Your message *"
+                required
+                class="input-field"
+              ></textarea>
+
+              <button type="submit" class="btn btn-tertiary">
+                Send Message
+              </button>
+            </form>
+
+            <div class="contact-content">
+              <ul class="contact-list">
+                <li class="contact-item">
+                  <div
+                    class="item-icon"
+                    style="background-color: hsl(177, 39%, 72%)"
+                  >
+                    <ion-icon name="call" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <div>
+                    <p class="label-lg">Phone</p>
+
+                    <a href="tel:+011236548096" class="body-lg"
+                      >+91 93045 28368</a
+                    >
+                  </div>
+                </li>
+
+                <li class="contact-item">
+                  <div
+                    class="item-icon"
+                    style="background-color: hsl(41, 99%, 64%)"
+                  >
+                    <ion-icon name="mail" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <div>
+                    <p class="label-lg">Mail</p>
+
+                    <a href="mailto:shreyakumari529@gmail.com" class="body-lg"
+                      >shreyakumari529@gmail.com</a
+                    >
+                  </div>
+                </li>
+
+                <li class="contact-item">
+                  <div
+                    class="item-icon"
+                    style="background-color: hsl(19, 97%, 85%)"
+                  >
+                    <ion-icon name="location" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <div>
+                    <p class="label-lg">Visit My Studio</p>
+
+                    <address class="body-lg">
+                      Fatehpur Palnagar, Siwan - 841226, Bihar, India
+                    </address>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer">
+      <div class="container">
+        <ul class="social-list">
+          <li>
+            <a
+              href="https://www.facebook.com/shreya2creation?mibextid=qi2Omg&rdid=KVECvCgTCwnVbEnH&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2FXgC8fhxj93VsN94Y%2F%3Fmibextid%3Dqi2Omg"
+              class="social-link"
+            >
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://x.com/Shreyak86443604?t=1EJ-Z0I7KL0uwK_BeNNrQA&s=08"
+              class="social-link"
+            >
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://www.instagram.com/shreya2creation?"
+              class="social-link"
+            >
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+        </ul>
+
+        <p class="text-center">
+          &copy; 2024-25
+          <a href="./index.html" style="display: inline; margin: 0 10px"
+            >SHREYA 2 CREATION</a
+          >
+          All right reserved.
+        </p>
+        <p class="text-center author">
+          Designed By
+          <a
+            href="https://www.instagram.com/divyanshu._.sinha/"
+            style="
+              display: inline;
+              margin-left: 8px;
+              text-decoration: underline 1px solid;
+              font-weight: 500;
+            "
+            >DIVYANSHU</a
+          >
+        </p>
+      </div>
+    </footer>
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!-- 
+    - ionicon
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

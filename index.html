@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shreya 2 Creation - Artist</title>
+    <meta name="title" content="Shreya 2 Creation - Artist" />
+    <meta
+      name="description"
+      content="Hey, I'm an Artist Shreya Kumari. Here yoy can see my skills and my customers's review I hope you will definitely like it!"
+    />
+    <!--- favicon -->
+    <link rel="shortcut icon" href="./favicon.ico" type="image/svg+xml" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/require.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- 
+    - preload images
+  -->
+    <link rel="preload" href="./assets/images/sherya.png" />
+
+    <style>
+      .container {
+        padding: 0px 6rem;
+      }
+      .unhide {
+        display: none;
+      }
+      .headline-lg {
+        background-color: rgba(255, 112, 136, 0.204);
+        padding: 12px 25px;
+        border-radius: 15px;
+        display: inline;
+        font-size: 4rem;
+        margin-top: 8px;
+        box-shadow: 5px 5px 0 -2px var(--hover-shadow-color, black);
+        border: 1px solid;
+        margin-bottom: 10px;
+      }
+      .list-icon {
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+      }
+      .list-icon li {
+        margin-right: 20px;
+      }
+
+      /* SWIPER */
+      .swiper {
+        border: 2px solid;
+        box-shadow: 5px 5px 0 -2px var(--hover-shadow-color, black);
+        width: 30vw;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .swiper-button-prev::after,
+      .swiper-button-next::after {
+        font-size: 25px;
+        color: black;
+        font-weight: 600;
+        background: orangered;
+        padding: 15px 20px;
+        box-shadow: 5px 5px 0 -2px var(--hover-shadow-color, black);
+      }
+
+      .cont {
+        flex-direction: row;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .swip2 {
+        width: 45%;
+      }
+      /* MEDIA */
+
+      @media (min-width: 768px) {
+        .client-name {
+          font-size: 130%;
+        }
+        .client-title {
+          font-size: 111%;
+        }
+        .body-sm {
+          font-size: 20px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .swiper {
+          width: 85%;
+        }
+        .swip2 {
+          width: 80%;
+          margin-top: 50px;
+        }
+        .cont {
+          flex-direction: column;
+        }
+        .headline-lg {
+          padding: 10px 25px;
+          font-size: 2.5rem;
+        }
+        .hero .container {
+          gap: 35px;
+        }
+        .about .container {
+          display: grid;
+          gap: 50px;
+        }
+        .author {
+          margin-top: 15px;
+        }
+        .container {
+          padding: 0px 2.2rem;
+        }
+        .unhide {
+          display: block;
+        }
+        .hide {
+          display: none;
+        }
+        .list-icon {
+          justify-content: center;
+        }
+      }
+      .home {
+        font-size: 35px;
+      }
+
+      @media (max-width: 768px) {
+        .home {
+          font-size: 30px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="preloader" data-preloader>
+      <div class="preloader-circle"></div>
+    </div>
+
+    <header class="header" data-header>
+      <div class="container">
+        <a href="./index.html" class="logo">
+          <ion-icon name="home-outline" class="home"></ion-icon>
+        </a>
+        <nav class="navbar" data-navbar>
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a
+                href="./index.html"
+                class="label-lg navbar-link has-after active"
+                >Home</a
+              >
+            </li>
+
+            <li class="navbar-item">
+              <a href="./portfolio.html" class="label-lg navbar-link has-after"
+                >Portfolio</a
+              >
+            </li>
+
+            <li class="navbar-item">
+              <a href="./contact.html" class="label-lg navbar-link has-after"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <a href="./contact.html" class="btn btn-primary">Contact Now</a>
+
+        <button class="nav-toggle-btn" aria-label="menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <!--- #HERO-->
+        <section class="section hero" aria-label="home">
+          <div class="container">
+            <!-- My Code -->
+
+            <figure class="unhide hero-banner" style="width: 90%">
+              <img
+                src="./assets/images/sherya.png"
+                alt="sherya"
+                class="w-100"
+              />
+            </figure>
+
+            <!-- My Code -->
+            <div class="hero-content">
+              <p class="hero-subtitle" style="margin-bottom: 40px">
+                👋, I am an Artist
+              </p>
+              <h1 class="headline-lg">
+                I'm
+                <span
+                  class="dev"
+                  style="display: inline; color: var(--orange-red)"
+                  >Shreya Shrivastva</span
+                >
+              </h1>
+
+              <p
+                class="hero-text body-md"
+                style="margin-top: 40px; font-weight: 500; color: black"
+              >
+                Hey, I am here to take orders for Paintings, Portraits &
+                handmade bedsheets. Also Intrested students for Degree in FINE
+                ART can contact to me.You can check my customer's review here.
+                <br />
+                Feel free to contact me :)
+              </p>
+              <ul class="list-icon">
+                <li>
+                  <a
+                    href="https://www.facebook.com/shreya2creation?mibextid=qi2Omg&rdid=KVECvCgTCwnVbEnH&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2FXgC8fhxj93VsN94Y%2F%3Fmibextid%3Dqi2Omg"
+                    class="btn btn-primary"
+                    style="padding: 7px"
+                    ><ion-icon
+                      name="logo-facebook"
+                      style="font-size: 28px"
+                    ></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a href="./portfolio.html" class="btn btn-primary">
+                    My Portfolio
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/shreya2creation?"
+                    class="btn btn-primary"
+                    style="padding: 7px"
+                    ><ion-icon
+                      name="logo-instagram"
+                      style="font-size: 28px"
+                    ></ion-icon>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- My Code -->
+
+            <figure class="hide hero-banner" style="width: 85%">
+              <img
+                src="./assets/images/sherya.png"
+                alt="Sherya"
+                class="w-100"
+              />
+            </figure>
+
+            <!-- My Code -->
+          </div>
+        </section>
+
+        <!-- - #ABOUT-->
+
+        <section
+          class="section about"
+          aria-label="about me"
+          style="--section-padding: 40px"
+        >
+          <div class="container">
+            <figure class="about-banner">
+              <img
+                src="./assets/images/about-banner.webp"
+                loading="lazy"
+                alt="Annie, the blonde, dressed in a black tops with a smile on her face"
+                class="w-100"
+              />
+            </figure>
+
+            <div class="about-content">
+              <h2 class="title-lg">
+                I'm an Artist with over 12 years of experience.
+              </h2>
+
+              <p class="body-md section-text">
+                I'm an artist with over 10-12 years of experience. I'm from
+                Siwan, Bihar. I do all type Paintings, Original painting like
+                oil color, arcylic color, water color, painting market,
+                Portraits. You can see my profile on Facebook, Instagram,
+                Twitter. Along with in News Articles.
+              </p>
+
+              <ul class="about-list">
+                <li>
+                  <p class="list-text">
+                    <strong class="strong title-md">285+</strong> Projet
+                    Completed
+                  </p>
+                </li>
+
+                <li>
+                  <p class="list-text">
+                    <strong class="strong title-md">190+</strong> Happy Clients
+                  </p>
+                </li>
+              </ul>
+
+              <div class="wrapper">
+                <a href="./contact.html" class="btn btn-primary">Contact Me</a>
+
+                <a href="./portfolio.html" class="btn btn-secondary"
+                  >Portfolio</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- - #SKILL-->
+
+        <section
+          class="section skill"
+          aria-labelledby="skill-label"
+          style="
+            --section-padding: 50px;
+            background-color: hsla(19, 100%, 55%, 0.1);
+            padding-bottom: 50px;
+          "
+        >
+          <div class="skill-content">
+            <h2
+              class="section-title headline-md"
+              id="skill-label"
+              style="text-align: center"
+            >
+              My Skills
+            </h2>
+          </div>
+          <div class="cont">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/images/sherya2images/2.jpg"
+                    alt="img"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/images/sherya2images/3.jpg"
+                    alt="img"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/images/sherya2images/4.jpg"
+                    alt="img"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/images/sherya2images/1.jpg"
+                    alt="img"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper mySwiper swip2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/images/appre/0.jpg"
+                    alt="img"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/images/appre/1.jpg"
+                    alt="img"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/images/appre/2.jpg"
+                    alt="img"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/images/appre/3.jpg"
+                    alt="img"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/images/appre/4.jpg"
+                    alt="img"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/images/appre/5.jpg"
+                    alt="img"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- #TESTIMONIALS -->
+
+        <section class="section testi" aria-labelledby="testi-label">
+          <div class="container">
+            <h2 class="headline-md section-title text-center" id="testi-label">
+              Testimonial
+            </h2>
+            <ul class="slider">
+              <li class="slider-item card-container">
+                <div class="card card-lg">
+                  <figure class="card-media">
+                    <img
+                      src="https://alchetron.com/cdn/balvant-parekh-6f246768-99ad-4f21-b953-e76f8d8f895-resize-750.jpg"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="img"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <blockquote class="body-sm">
+                      Your work is of very high quality!
+                    </blockquote>
+
+                    <p class="client-name">M B Parekh</p>
+
+                    <p class="client-title">Founder - Pidilite</p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="slider-item card-container">
+                <div class="card card-lg">
+                  <figure class="card-media">
+                    <img
+                      src="./assets/images/disha.jpg"
+                      loading="lazy"
+                      alt="img"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <blockquote class="body-sm">I liked your art!</blockquote>
+
+                    <p class="client-name">Disha Patani</p>
+
+                    <p class="client-title">Model</p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="slider-item card-container">
+                <div class="card card-lg">
+                  <figure class="card-media">
+                    <img
+                      src="./assets/images/Amandacerny.jpg"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="img"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <blockquote class="body-sm">I liked your art!</blockquote>
+
+                    <p class="client-name">Amandacerny</p>
+
+                    <p class="client-title">Model</p>
+                  </div>
+                </div>
+              </li>
+              <li class="slider-item card-container">
+                <div class="card card-lg">
+                  <figure class="card-media">
+                    <img
+                      src="./assets/images/Shruti.jpg"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="img"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <blockquote class="body-sm">I liked your art!</blockquote>
+
+                    <p class="client-name">Shruti Haasan</p>
+
+                    <p class="client-title">Model</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <!-- #FOOTER -->
+
+    <footer class="footer">
+      <div class="container">
+        <ul class="social-list">
+          <li>
+            <a
+              href="https://www.facebook.com/shreya2creation?mibextid=qi2Omg&rdid=KVECvCgTCwnVbEnH&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2FXgC8fhxj93VsN94Y%2F%3Fmibextid%3Dqi2Omg"
+              class="social-link"
+            >
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://x.com/Shreyak86443604?t=1EJ-Z0I7KL0uwK_BeNNrQA&s=08"
+              class="social-link"
+            >
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://www.instagram.com/shreya2creation?"
+              class="social-link"
+            >
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+        </ul>
+
+        <p class="text-center">
+          &copy; 2024-25
+          <a href="./index.html" style="display: inline; margin: 0 10px"
+            >SHREYA 2 CREATION</a
+          >
+          All right reserved.
+        </p>
+        <p class="text-center author">
+          Designed By
+          <a
+            href="https://www.instagram.com/divyanshu._.sinha/"
+            style="
+              display: inline;
+              margin-left: 8px;
+              text-decoration: underline 1px solid;
+              font-weight: 500;
+            "
+            >DIVYANSHU</a
+          >
+        </p>
+      </div>
+    </footer>
+
+    <script src="./assets/js/script.js"></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        loop: true,
+        autoplay: {
+          delay: 1500,
+          disableOnInteraction: false,
+        },
+      });
+    </script>
+  </body>
+</html>
